@@ -1,0 +1,972 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000;
+    --white: #ffff;
+    --pink: #eb466ac9;
+    --grey: #6d6767;
+}
+
+body {
+    background: var(--black);
+    color: var(--white);
+}
+
+.container {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+
+.container .welcome-message {
+    max-width: 500px;
+    width: 100%;
+    margin: 10px 50px;
+}
+
+.container .welcome-message h1 {
+    font-size: 5rem;
+}
+
+.container .welcome-message p {
+    width: 80%;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: 1px solid;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.container .profile-picture img {
+    transform: rotate(15deg);
+}
+
+.container .profile-picture img, .profile .about-pic img {
+    width: 350px;
+    height: 500px;
+    display: block;
+    border-radius: 100%;
+    border: 10px solid #fff;
+}
+
+
+.container .profile-picture a {
+    text-decoration: none;
+    color: var(--pink);
+    font-size: 1.5rem;
+    margin-top: 5px;
+    margin-left: 20rem;
+    text-align: right;
+    display: block;
+    cursor: pointer;
+}
+
+.container .profile-picture a:hover {
+    text-decoration: underline;
+}
+
+.container .profile-picture a span {
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.profile {
+    display: flex;
+    margin: 8rem 9% 5%;
+}
+
+.profile .about-me h2 {
+    font-size: 6rem;
+    word-spacing: 5px;
+    font-weight: 500;
+}
+
+.profile .about-me p.one {
+    margin-top: 6rem;
+    margin-right: 15rem;
+    font-size: 2rem;
+    max-width: 100%;
+    width: 480px;
+}
+
+.profile .about-me p.two {
+    margin-top: 3rem;
+    width: 200px;
+    border: 1px solid #fff;
+}
+
+.profile .about-pic img {
+    image-orientation: from-image;
+}
+
+.background h2 {
+    font-size: 7rem;
+    font-weight: 100;
+    margin: 5rem 7rem 0;
+}
+
+.background > div {
+    margin: 3rem 45rem;
+    max-width: 400px;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.Education ul, .work-exp ul {
+    margin-left: 4rem;
+    margin-top: 20px;
+    padding: 10px 0;
+    color: var(--grey);
+    line-height: 2;
+}
+
+.art h2 {
+    font-size: 5rem;
+    font-weight: lighter;
+    margin: 5rem;
+}
+
+.adj {
+    max-width: 60%;
+    height: 400px;
+}
+
+.adj .images {
+    width: 290px;
+    height: 290px;
+    margin: 0 4%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.adj a {
+    width: 300px;
+    font-size: 1rem;
+    font-weight: 100;
+    color: var(--pink);
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.adj .images:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.my-moto {
+    max-width: 100%;
+    width: 580px;
+    padding: 8rem 9%;
+    font-size: 4rem;
+}
+
+.moto-pic {
+    margin-left: 3rem;
+    transform: rotate(15deg);
+}
+
+footer {
+    margin-bottom: 3rem;
+}
+
+footer h3 {
+    font-size: 6rem;
+    margin: 20px 70px;
+    width: 500px;
+    font-weight: lighter;
+}
+
+.contact-address {
+    display: flex;
+    width: 100%;
+    margin-top: 8rem;
+}
+
+.contact-address > div {
+    margin: 30px 50px;
+}
+
+.contact-address > div h4 {
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.contact-address > div  p {
+    font-size: 1.3rem;
+    color: var(--grey);
+}
+
+.contact-address > div  p.short {
+    width: 500px;
+}
+
+footer a {
+    margin-top: 6rem;
+    margin-left: 75%;
+    font-size: 2rem;
+    font-weight: normal;
+    color: var(--pink);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 849px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        display: flex;
+        margin: 30px;
+        max-width: 100%;
+    }
+    
+    .container .welcome-message {
+        width: 100%;
+        margin: 10px;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    
+    .container .welcome-message h1 {
+        font-size: 3rem;
+    }
+    
+    .container .welcome-message p {
+        width: 200px;
+        padding: 15px 20px;
+        border-radius: 30px;
+        border: 1px solid;
+        font-size: .7rem;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    
+
+    .profile-picture {
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .container .profile-picture img {
+        transform: rotate(15deg);
+    }
+    
+    .container .profile-picture img, .profile .about-pic img {
+        width: 250px;
+        height: 350px;
+        display: block;
+        border-radius: 100%;
+        border: 10px solid #fff;
+    }
+    
+    
+    .container .profile-picture a {
+        text-decoration: none;
+        color: var(--pink);
+        font-size: 1.3rem;
+        margin-top: 5px;
+        margin-left: 3rem;
+        text-align: right;
+        display: block;
+        cursor: pointer;
+    }
+
+    .profile {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .profile .about-me h2 {
+        font-size: 3rem;
+        word-spacing: 0;
+        font-weight: 500;
+    }
+    
+    .profile .about-me p.one {
+        margin: auto;
+        font-size: 2rem;
+        width: 100%;
+        padding-top: 4rem;
+        box-sizing: border-box;
+    }
+    
+    .profile .about-me p.two {
+        margin-top: 3rem;
+        width: 200px;
+        border: 1px solid #fff;
+    }
+    
+    .profile .about-pic img {
+        margin-left: 20px;
+        image-orientation: from-image;
+    }
+
+    .background h2 {
+        font-size: 4rem;
+        font-weight: 100;
+        margin: 5rem;
+    }
+    
+    .background > div {
+        margin: 3rem 16rem;
+        max-width: 400px;
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    
+    .Education ul, .work-exp ul {
+        margin-left: 2rem;
+        margin-top: 20px;
+        padding: 10px 0;
+        color: var(--grey);
+        line-height: 2;
+    }
+
+    .img {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+
+    .art h2 {
+        font-size: 5rem;
+        font-weight: lighter;
+        margin: 5rem;
+    }
+    
+    .adj {
+        width: 300px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .my-moto {
+        width: 100%;
+        padding: 8rem 9%;
+        font-size: 2rem;
+    }
+    
+    .moto-pic {
+        margin: 20px;
+    }
+
+    footer {
+        margin-bottom: 3rem;
+    }
+    
+    footer h3 {
+        font-size: 3rem;
+        margin: 20px 37px;
+        width: 100%;
+        font-weight: lighter;
+    }
+    
+    .contact-address {
+        display: block;
+        width: 100%;
+        margin-top: 8rem;
+    }
+    
+    .contact-address > div  p {
+        font-size: 1.3rem;
+        color: var(--grey);
+    }
+
+    footer a {
+        margin-top: 6rem;
+        margin-left: 60%;
+        font-size: 2rem;
+    }
+
+    .work {
+       width: 100%;
+       font-size: 3rem; 
+    }
+
+}
+
+@media (max-width: 747px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        display: flex;
+        margin: 30px;
+        max-width: 100%;
+    }
+    
+    .container .welcome-message {
+        width: 100%;
+        margin: 10px;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    
+    .container .welcome-message h1 {
+        font-size: 3rem;
+    }
+    
+    .container .welcome-message p {
+        width: 200px;
+        padding: 15px 20px;
+        border-radius: 30px;
+        border: 1px solid;
+        font-size: .7rem;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    
+
+    .profile-picture {
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .container .profile-picture img {
+        transform: rotate(15deg);
+    }
+    
+    .container .profile-picture img, .profile .about-pic img {
+        width: 250px;
+        height: 350px;
+        display: block;
+        border-radius: 100%;
+        border: 10px solid #fff;
+    }
+    
+    
+    .container .profile-picture a {
+        text-decoration: none;
+        color: var(--pink);
+        font-size: 1.3rem;
+        margin-top: 5px;
+        margin-left: 3rem;
+        text-align: right;
+        display: block;
+        cursor: pointer;
+    }
+
+    .profile {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .profile .about-me h2 {
+        font-size: 3rem;
+        word-spacing: 0;
+        font-weight: 500;
+    }
+    
+    .profile .about-me p.one {
+        margin: auto;
+        font-size: 2rem;
+        width: 100%;
+        padding-top: 4rem;
+        box-sizing: border-box;
+    }
+    
+    .profile .about-me p.two {
+        margin-top: 3rem;
+        width: 200px;
+        border: 1px solid #fff;
+    }
+    
+    .profile .about-pic img {
+        margin-left: 20px;
+        image-orientation: from-image;
+    }
+
+    .background h2 {
+        font-size: 4rem;
+        font-weight: 100;
+        margin: 5rem;
+    }
+    
+    .background > div {
+        margin: 3rem 16rem;
+        max-width: 400px;
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    
+    .Education ul, .work-exp ul {
+        margin-left: 2rem;
+        margin-top: 20px;
+        padding: 10px 0;
+        color: var(--grey);
+        line-height: 2;
+    }
+
+    .img {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+
+    .art h2 {
+        font-size: 5rem;
+        font-weight: lighter;
+        margin: 5rem;
+    }
+    
+    .adj {
+        width: 300px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .my-moto {
+        width: 100%;
+        padding: 8rem 9%;
+        font-size: 2rem;
+    }
+    
+    .moto-pic {
+        margin: 20px;
+    }
+
+    footer {
+        margin-bottom: 3rem;
+    }
+    
+    footer h3 {
+        font-size: 3rem;
+        margin: 20px 37px;
+        width: 100%;
+        font-weight: lighter;
+    }
+    
+    .contact-address {
+        display: block;
+        width: 100%;
+        margin-top: 8rem;
+    }
+    
+    .contact-address > div  p {
+        font-size: 1.3rem;
+        color: var(--grey);
+    }
+
+    footer a {
+        margin-top: 6rem;
+        margin-left: 60%;
+        font-size: 2rem;
+    }
+
+    .work {
+       width: 100%;
+       font-size: 3rem; 
+    }
+
+}
+
+@media (max-width: 500px) {
+    .home {
+      height: 100vh;
+      width: 100%;
+    }
+    
+    .container {
+      display: block;
+      margin: 20px 10px 10px;
+  }
+  
+  .container .welcome-message {
+      width: 300px;
+      margin: 3rem 5px 0;
+  }
+  
+  .container .welcome-message h1 {
+      font-size: 1.5rem;
+      text-align: center;
+  }
+  
+  .container .welcome-message p {
+      padding: 8px 20px;
+      margin: 5rem 0 3rem;
+      font-size: .8rem
+  }
+    
+  .container .profile-picture img, .profile .about-pic img {
+      width: 300px;
+      height: 350px;
+      margin-left: 10px;
+  }
+  
+  
+  .container .profile-picture a {
+      margin-left: 0;
+  }
+    
+    .about {
+      margin-top: 3rem;
+    }
+    
+    
+    .profile {
+      display: block;
+      margin: 4rem 5% 5%;
+    }
+  
+  .profile .about-me h2 {
+      font-size: 3rem;
+      word-spacing: 1px;
+  }
+  
+  .profile .about-me p.one {
+      margin-top: 6rem;
+      margin-right: 15rem;
+      font-size: 1.5rem;
+      max-width: 100%;
+      width: 480px;
+  }
+  
+  .profile .about-me p.two {
+      margin-top: 3rem;
+      width: 200px;
+      border: 1px solid #fff;
+  }
+  
+  .profile .about-pic {
+      margin-top: 3rem;
+  }
+  
+    .background {
+      margin-top: 6rem;
+    }
+    
+    
+    .background h2 {
+      font-size: 2rem;
+      font-weight: 500;
+      margin: 1.3rem 1.5rem 0;
+  }
+  
+  .background > div {
+      margin: 3rem 0;
+      padding: 10px;
+      font-size: 1rem;
+  }
+  
+  .Education ul, .work-exp ul {
+      margin-left: 2.5rem;
+      margin-top: 20px;
+      padding: 10px 0;
+      width: 300px;
+      color: var(--grey);
+      line-height: 2;
+  }
+    
+    
+  .art h2 {
+      font-size: 3rem;
+      font-weight: 300;
+      margin: 5rem 20px;
+  }
+  
+  .adj {
+      max-width: 100%;
+      height: 300px;
+      margin: 1rem 20px;
+  }
+  
+  .adj .images {
+      width: 200px;
+      height: 200px;
+      margin: 0 4%;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+  }
+  
+  .adj a {
+      width: 250px;
+      font-size: 1.2rem;
+  }
+  
+  .img {
+      display: block;
+      gap: 1px;
+  }
+  
+    .my-moto {
+      text-align: left;
+      width: 100%;
+      padding: 0 10px 1.5rem;
+      font-size: 2rem;
+  }
+  
+  .moto-pic {
+      transform: rotate(0deg);
+  }
+    footer {
+      margin: 3rem 0 1.5rem;
+      max-width: 100%;
+      overflow-x: hidden;
+  }
+  
+  footer h3 {
+      font-size: 2rem;
+      margin: 5px 10px;
+      width: 100%;
+      font-weight: lighter;
+  }
+    
+  .contact-address > div {
+      margin: 15px 0;
+      padding: 10px;
+      width: 100%;
+  }
+    
+  .contact-address > div  p {
+      font-size: 1.3rem;
+      color: var(--grey);
+  }
+  
+  .contact-address > div  p.short {
+      width: 100%;
+      font-size: 1.2rem;
+      word-wrap: break-word;
+  }
+  
+  footer a {
+      
+  font-size: 1.3rem;
+      text-align: end;
+      margin: 30px 20px;
+  }
+  
+    .contact-address {
+      display: block;
+      margin: 0;
+  }
+    
+    
+  }
+
+@media (max-width: 360px) {
+    .home {
+      height: 100vh;
+      width: 100%;
+    }
+    
+    .container {
+      display: block;
+      margin: 20px 10px 10px;
+  }
+  
+  .container .welcome-message {
+      width: 300px;
+      margin: 3rem 5px 0;
+  }
+  
+  .container .welcome-message h1 {
+      font-size: 1.5rem;
+      text-align: center;
+  }
+  
+  .container .welcome-message p {
+      padding: 8px 20px;
+      margin: 5rem 0 3rem;
+      font-size: .8rem
+  }
+    
+  .container .profile-picture img, .profile .about-pic img {
+      width: 300px;
+      height: 350px;
+      margin-left: 10px;
+  }
+  
+  
+  .container .profile-picture a {
+      margin-left: 0;
+  }
+    
+    .about {
+      margin-top: 3rem;
+    }
+    
+    
+    .profile {
+      display: block;
+      margin: 4rem 5% 5%;
+    }
+  
+  .profile .about-me h2 {
+      font-size: 3rem;
+      word-spacing: 1px;
+  }
+  
+  .profile .about-me p.one {
+      margin-top: 6rem;
+      margin-right: 15rem;
+      font-size: 1.5rem;
+      max-width: 100%;
+      width: 480px;
+  }
+  
+  .profile .about-me p.two {
+      margin-top: 3rem;
+      width: 200px;
+      border: 1px solid #fff;
+  }
+  
+  .profile .about-pic {
+      margin-top: 3rem;
+  }
+  
+    .background {
+      margin-top: 6rem;
+    }
+    
+    
+    .background h2 {
+      font-size: 2rem;
+      font-weight: 500;
+      margin: 1.3rem 1.5rem 0;
+  }
+  
+  .background > div {
+      margin: 3rem 0;
+      padding: 10px;
+      font-size: 1rem;
+  }
+  
+  .Education ul, .work-exp ul {
+      margin-left: 2.5rem;
+      margin-top: 20px;
+      padding: 10px 0;
+      width: 300px;
+      color: var(--grey);
+      line-height: 2;
+  }
+    
+    
+  .art h2 {
+      font-size: 3rem;
+      font-weight: 300;
+      margin: 5rem 20px;
+  }
+  
+  .adj {
+      max-width: 100%;
+      height: 300px;
+      margin: 1rem 20px;
+  }
+  
+  .adj .images {
+      width: 200px;
+      height: 200px;
+      margin: 0 4%;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+  }
+  
+  .adj a {
+      width: 250px;
+      font-size: 1.2rem;
+  }
+  
+  .img {
+      display: block;
+      gap: 1px;
+  }
+  
+    .my-moto {
+      text-align: left;
+      width: 100%;
+      padding: 0 10px 1.5rem;
+      font-size: 2rem;
+  }
+  
+  .moto-pic {
+      transform: rotate(0deg);
+  }
+    footer {
+      margin: 3rem 0 1.5rem;
+      max-width: 100%;
+      overflow-x: hidden;
+  }
+  
+  footer h3 {
+      font-size: 2rem;
+      margin: 5px 10px;
+      width: 100%;
+      font-weight: lighter;
+  }
+    
+  .contact-address > div {
+      margin: 15px 0;
+      padding: 10px;
+      width: 100%;
+  }
+    
+  .contact-address > div  p {
+      font-size: 1.3rem;
+      color: var(--grey);
+  }
+  
+  .contact-address > div  p.short {
+      width: 100%;
+      font-size: 1.2rem;
+      word-wrap: break-word;
+  }
+  
+  footer a {
+      
+  font-size: 1.3rem;
+      text-align: end;
+      margin: 30px 20px;
+  }
+  
+    .contact-address {
+      display: block;
+      margin: 0;
+  }
+    
+    
+  }
